@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB3162B125B4B6CE00968C18 /* PokeSpeareSDK.framework in Resources */ = {isa = PBXBuildFile; fileRef = FB75F91625B3650F00B2A54A /* PokeSpeareSDK.framework */; };
+		FB3162B225B4B72A00968C18 /* PokeSpeareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB75F91625B3650F00B2A54A /* PokeSpeareSDK.framework */; };
+		FB3162B325B4B72A00968C18 /* PokeSpeareSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB75F91625B3650F00B2A54A /* PokeSpeareSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB35F46525B8B5E000AD0076 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB35F46425B8B5E000AD0076 /* SearchViewModel.swift */; };
 		FB75F8EB25B362B200B2A54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75F8EA25B362B200B2A54A /* AppDelegate.swift */; };
 		FB75F8ED25B362B200B2A54A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75F8EC25B362B200B2A54A /* SceneDelegate.swift */; };
 		FB75F8EF25B362B200B2A54A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB75F8EE25B362B200B2A54A /* ViewController.swift */; };
@@ -27,7 +31,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FB3162B425B4B72A00968C18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FB3162B325B4B72A00968C18 /* PokeSpeareSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FB35F46425B8B5E000AD0076 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		FB75F8E725B362B200B2A54A /* PokeSpeare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeSpeare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB75F8EA25B362B200B2A54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB75F8EC25B362B200B2A54A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +59,7 @@
 		FB75F90025B362B700B2A54A /* PokeSpeareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeSpeareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB75F90425B362B700B2A54A /* PokeSpeareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSpeareTests.swift; sourceTree = "<group>"; };
 		FB75F90625B362B700B2A54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB75F91625B3650F00B2A54A /* PokeSpeareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PokeSpeareSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3162B225B4B72A00968C18 /* PokeSpeareSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +81,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB35F46125B8B51800AD0076 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB35F46425B8B5E000AD0076 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB35F46325B8B52600AD0076 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FB75F8EE25B362B200B2A54A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FB75F8DE25B362B200B2A54A = {
 			isa = PBXGroup;
 			children = (
+				FB75F91525B3650000B2A54A /* Frameworks */,
 				FB75F8E925B362B200B2A54A /* PokeSpeare */,
 				FB75F90325B362B700B2A54A /* PokeSpeareTests */,
 				FB75F8E825B362B200B2A54A /* Products */,
@@ -81,9 +119,10 @@
 		FB75F8E925B362B200B2A54A /* PokeSpeare */ = {
 			isa = PBXGroup;
 			children = (
+				FB35F46325B8B52600AD0076 /* View */,
+				FB35F46125B8B51800AD0076 /* ViewModel */,
 				FB75F8EA25B362B200B2A54A /* AppDelegate.swift */,
 				FB75F8EC25B362B200B2A54A /* SceneDelegate.swift */,
-				FB75F8EE25B362B200B2A54A /* ViewController.swift */,
 				FB75F8F025B362B200B2A54A /* Main.storyboard */,
 				FB75F8F625B362B600B2A54A /* Assets.xcassets */,
 				FB75F8F825B362B600B2A54A /* LaunchScreen.storyboard */,
@@ -102,6 +141,14 @@
 			path = PokeSpeareTests;
 			sourceTree = "<group>";
 		};
+		FB75F91525B3650000B2A54A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB75F91625B3650F00B2A54A /* PokeSpeareSDK.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +159,7 @@
 				FB75F8E325B362B200B2A54A /* Sources */,
 				FB75F8E425B362B200B2A54A /* Frameworks */,
 				FB75F8E525B362B200B2A54A /* Resources */,
+				FB3162B425B4B72A00968C18 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3162B125B4B6CE00968C18 /* PokeSpeareSDK.framework in Resources */,
 				FB75F8FA25B362B600B2A54A /* LaunchScreen.storyboard in Resources */,
 				FB75F8F725B362B600B2A54A /* Assets.xcassets in Resources */,
 				FB75F8F225B362B200B2A54A /* Main.storyboard in Resources */,
@@ -204,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB75F8EF25B362B200B2A54A /* ViewController.swift in Sources */,
+				FB35F46525B8B5E000AD0076 /* SearchViewModel.swift in Sources */,
 				FB75F8EB25B362B200B2A54A /* AppDelegate.swift in Sources */,
 				FB75F8F525B362B200B2A54A /* PokeSpeare.xcdatamodeld in Sources */,
 				FB75F8ED25B362B200B2A54A /* SceneDelegate.swift in Sources */,
@@ -367,6 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = PokeSpeare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -384,6 +438,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = PokeSpeare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

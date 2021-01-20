@@ -1,0 +1,11 @@
+framework module PokeSpeareSDK {
+  umbrella header "PokeSpeareSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module PokeSpeareSDK.Swift {
+    header "PokeSpeareSDK-Swift.h"
+    requires objc
+}
